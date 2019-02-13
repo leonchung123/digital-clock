@@ -12,6 +12,7 @@ body {
 }
 
 .header{
+    min-height: 59px;
     height: 10%;
     width: 100%;
     background-color: rgb(105, 148, 148);
@@ -36,10 +37,27 @@ body {
     font-size: 800%;
     text-align: center;
     margin-bottom: 0%;
+    text-shadow: 2px 2px rgb(105, 148, 148),
+                3px 3px rgb(105, 148, 148),
+                4px 4px rgb(105, 148, 148),
+                5px 5px rgb(105, 148, 148),
+                6px 6px rgb(105, 148, 148),
+                7px 7px rgb(105, 148, 148);
 }
 
 .time-message {
     margin-top: 0%;
     font-size: 400%;
     text-align: center;
+}
+
+.mode-button {
+    background-color:  rgb(15, 130, 130);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 6px;
+    cursor: pointer;
 }
