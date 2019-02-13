@@ -5,9 +5,17 @@
         <link href="css/styles.css" type="text/css" rel="stylesheet" />
         <script src="scripts/clock.js"></script>
     </head>
-    <body onload="startTime()">
+    <body onload="startMilitaryTime()">
         <div class="header">
-            <button class="mode-button">Mode</button>
+            
+            <div class="dropdown">
+                <button class="mode-button">Mode</button>
+                <div class="dropdown-content">
+                  <a href="javascript:startMilitaryTime()">Military Time</a>
+                  <a href="javascript:start12HourTime()">12 hour time</a>
+                </div>
+              </div>
+
         </div>
 
         <div class="main-display">
