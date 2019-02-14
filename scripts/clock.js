@@ -1,6 +1,8 @@
 // Leon Chung 2019
 // 24 hour clock (military time)
 var t;
+var weekday = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
 function startMilitaryTime() {
     clearTimeout(t);
@@ -13,6 +15,8 @@ function startMilitaryTime() {
     seconds = checkTime(seconds);
 
     document.getElementsByClassName("time")[0].innerHTML = hour + ':' + minutes + ':' + seconds;
+    document.getElementsByClassName("time-message")[0].innerHTML = weekday[today.getDay()] + ' ' + today.getDate()
+     + ' ' + months[today.getMonth()] + ' ' + today.getFullYear();
 
     t = setTimeout(startMilitaryTime, 500);
 }
